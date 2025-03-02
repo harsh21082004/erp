@@ -1,0 +1,28 @@
+.react-calendar__navigation{
+    display: flex;
+    height: 44px;
+    color: black;
+    margin-bottom: 1em;
+    background: white;
+    border-radius: 10px;
+}
+
+.react-calender__navigation button{
+    color: black;
+}
+
+.react-calendar__month-view__weekdays{
+    color: orange;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr{
+    text-decoration: none;
+}
+
+.react-calendar__tile{
+    color: rgb(255, 255, 255);
+}
+
+.react-calendar__tile:hover{
+    color: rgb(0, 0, 0);
+}

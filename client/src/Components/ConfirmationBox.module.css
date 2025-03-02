@@ -1,0 +1,118 @@
+.deleteCourseModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 250px;
+  right: 0;
+  width: calc(100% - 250px);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.deleteCourseModalContent {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #25292e;
+  height: 200px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  min-width: 400px;
+  max-width: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.deleteCourseModalHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.deleteCourseModalHeader i {
+  color: white;
+}
+
+.deleteCourseModalBody {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.deleteCourseModalBody p {
+  color: white;
+}
+
+.deleteCourseModalBottom {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.button {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background: #87DB1c;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: 3px 4px 5px rgb(93, 93, 93);
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  transition: 0.3s all;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background: #5fa800;
+  color: white;
+  letter-spacing: 10px;
+}
+
+@media screen and (max-width: 993px) {
+  .main {
+    margin-left: 0 !important;
+    border-radius: 0;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .deleteCourseModal {
+    width: 100%;
+    min-width: 100%;
+    left: 0;
+  }
+
+  .deleteCourseModalContent {
+    width: 70%;
+    height: 150px;
+    min-width: 200px;
+  }
+
+  .button{
+    font-size: 13px;
+    height: 30px;
+    width: 30%;
+    margin-top: 0;
+  }
+
+  .deleteCourseModalBottom {
+    margin-top: 10px;
+  }
+}

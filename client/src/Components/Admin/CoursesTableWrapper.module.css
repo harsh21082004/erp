@@ -1,0 +1,300 @@
+/* Wrapper to make the table responsive with a horizontal scroll */
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 2px solid #EFF3F7;
+    height: 100%;
+    /* overflow: visible; */
+}
+
+/* Styling the table */
+.courseTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+/* Styling the table header */
+.courseTable thead {
+    background-color: #f5f5f5;
+    text-align: left;
+}
+
+/* Styling the table rows */
+.courseTable th {
+    background-color: #E5F3FF;
+    color: #3a536a;
+    border: none;
+}
+
+.courseTable thead tr th span {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 14px;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.courseTable thead tr th span i {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+td {
+    box-shadow: none;
+    border: none;
+}
+
+tbody tr {
+    border-bottom: 2px solid #EFF3F7;
+}
+
+tbody tr td:nth-child(1) {
+    font-weight: bold;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+/* 
+tbody tr td:last-child{
+    display: flex;
+    justify-content: center;
+} */
+
+.courseTable thead tr th span i:hover {
+    background-color: #C9F1E8;
+    color: #007659;
+}
+
+/* Action column */
+.courseTable td:last-child {
+    position: relative;
+}
+
+.actionIcon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.actionIcon:hover {
+    background-color: #C9F1E8;
+    color: #007659;
+}
+
+.actions {
+    width: 220px;
+    height: 220px;
+    background-color: #121412;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    border-radius: 10px;
+    right: 70px;
+    z-index: 1;
+    top: 30px;
+    display: none;
+}
+
+.tableWithExtendedHeight {
+    height: auto; /* Allow the table to grow dynamically */
+    padding-bottom: 220px; /* Adjust based on the action card's height */
+}
+
+
+.actionVisible {
+    display: block !important;
+}
+
+.actionHidden {
+    display: none !important;
+}
+
+.action {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+/* Styling for action menu */
+.actions {
+    display: none;
+    /* Hidden by default */
+}
+
+.actionVisible {
+    display: block;
+}
+
+.actionHidden {
+    display: none;
+}
+
+/* Scrollbar for mobile view */
+@media (max-width: 768px) {
+    .tableWrapper {
+        overflow-x: scroll;
+    }
+}
+
+.actions i:nth-child(1):hover~.addView,
+.addView:hover {
+    display: block;
+}
+
+
+
+.addView {
+    width: 100%;
+    height: 100%;
+}
+
+.addView li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.addView li a:hover {
+    background-color: #2e2e2e;
+}
+
+.addView li {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 993px) {
+    .main{
+        margin-left: 0 !important;
+        border-radius: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .addCourseModal {
+        width: 100%;
+        min-width: 100%;
+        left: 0;
+    }
+
+    .addCourseModalContent {
+        width: 100%;
+        min-width: 400px;
+        max-width: 400px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .addCourseModalContent {
+        width: 100%;
+        min-width: 300px;
+        max-width: 300px !important;
+        max-height: 350px;
+        height: 100%;
+    }
+
+    .addCourseModal .input div input, .addCourseModal .input div select{
+        padding: 5px;
+    }
+
+    .addCourseModal .input div span {
+        font-size: 12px;
+        top: 8px;
+        left: 15px;
+    }
+
+    .addCourseModal .input div input:focus~span,
+    .addCourseModal .input div input:valid~span {
+        transform: translateX(10px) translateY(-10px);
+        font-size: 10px;
+        padding: 0 5px;
+        top: 3px;
+        background: #000000;
+        border-radius: 3px;
+    }
+
+    .button{
+        height: 30px;
+        font-size: 12px;
+        width: 50% !important;
+    }
+
+    .header h3 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .card {
+        height: 35px;
+    }
+
+    .card h3 {
+        font-size: 14px;
+    }
+
+    .actions {
+        width: 120px;
+        gap: 5px;
+        right: 40px;
+        height: 160px;
+    }
+
+    .actions i {
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .actions .button {
+        width: 50px;
+        height: 20px;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .action{
+        padding: 5px;
+    }
+
+    .addView {
+        top: 18px;
+        width: 100%;
+    }
+
+    .addView li a {
+        font-size: 10px;
+        border-radius: 5px;
+    }
+}

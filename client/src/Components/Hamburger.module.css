@@ -1,0 +1,31 @@
+.open,.close{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40px;
+    height: 35px;
+}
+
+.open li, .close li{
+    list-style:none;
+    background: white;
+    height: 4px;
+    width: 30px;
+    margin: 2px 0;
+    border-radius: 5px;
+    transition: 0.3s all;
+}
+
+.close li:nth-child(1){
+    transform: rotate(45deg) translate(5px, 9.5px);
+}
+
+.close li:nth-child(3){
+    transform: rotate(-45deg) translate(5px, -9.5px);
+}
+
+.close li:nth-child(2){
+    opacity: 0;
+    transform: translateX(-5px);
+}

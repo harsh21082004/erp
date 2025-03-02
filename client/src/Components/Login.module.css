@@ -1,0 +1,503 @@
+.rightContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    justify-content: space-between;
+    padding: 50px;
+    height: 600px;
+    background: #f5efff;
+    border-radius: 15px;
+    z-index: 1;
+    animation: translatetoright forwards 0.5s;
+}
+
+.leftContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    justify-content: space-between;
+    padding: 50px;
+    height: 600px;
+    background: #f5efff;
+    border-radius: 15px;
+    z-index: 1;
+    transition: 1s all;
+    animation: translatetoleft forwards 0.5s;
+}
+
+@keyframes translatetoleft {
+    0% {
+        transform: translateX(80%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes translatetoright {
+    0% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.main {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #25292e;
+    min-height: 620px;
+    max-height: 1000vh;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 10px;
+    width: 98.5%;
+    height: 98.5%;
+    margin: auto auto;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 80px !important;
+    padding-right: 25px !important;
+    width: 50%;
+    padding: 15px;
+    justify-content: center;
+    z-index: 0;
+    animation: translatetoleft forwards 0.5s;
+}
+
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 80px !important;
+    padding-right: 25px !important;
+    width: 50%;
+    padding: 15px;
+    justify-content: center;
+    z-index: 0;
+    transition: 1s all;
+    animation: translatetoright forwards 0.5s;
+}
+
+.left h3,.right h3{
+    font-size: 25px;
+    margin: 10px auto;
+}
+
+.role {
+    justify-content: space-evenly;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.role div {
+    display: flex;
+}
+
+.role div select {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.input div input {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.input div {
+    display: flex;
+    position: relative;
+}
+
+.input span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    top: 10px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0 5px;
+    transition: 0.3s;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.role div select,
+.role div select option {
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding-left: 15px;
+    text-transform: uppercase;
+    background-color: white;
+    color: #000000;
+}
+
+.input div input:focus~span,
+.input div input:valid~span {
+    color: white;
+    transform: translateX(10px) translateY(-10px);
+    font-size: 14px;
+    padding: 0 5px;
+    top: 0px;
+    background: #000000;
+    border-radius: 3px;
+}
+
+.checkbox {
+    display: block;
+    width: 95%;
+    padding: 10px 20px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.checkbox div{
+    display: flex;
+    align-items: center;
+}
+
+.checkboxinput {
+    transform: scale(1.5);
+    margin: 0 5px;
+    border: none;
+    outline: none;
+}
+
+.button {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background: #87DB1c;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 3px 4px 5px rgb(93, 93, 93);
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    transition: 0.3s all;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    background: #5fa800;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.checklabel {
+    font-size: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.forgot {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: 0.3s all;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.forgot::after {
+    content: "";
+    /* Required for pseudo-elements */
+    position: absolute;
+    /* Position the pseudo-element relative to its first positioned (not static) ancestor */
+    bottom: -5px;
+    /* Position the pseudo-element at the bottom of the .forgot element */
+    left: 0;
+    /* Position the pseudo-element at the left of the .forgot element */
+    width: 0;
+    height: 2px;
+    background: #87DB1c;
+    transition: width 0.2s ease;
+    /* Specify the transition property more clearly */
+}
+
+.forgot:hover::after {
+    width: 100%;
+    /* Expand the width of the pseudo-element on hover */
+}
+
+.forgot:hover {
+    letter-spacing: 2px;
+}
+
+.noAccount {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.noAccount p {
+    font-size: 18px;
+}
+
+.noAccount a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.button1 {
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+    background: #87DB1c;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 3px 4px 5px rgb(93, 93, 93);
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    transition: 0.3s all;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.button1:hover {
+    background: #5fa800;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.leftContainer img,
+.rightContainer img {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: block;
+
+}
+
+@media screen and (max-width:1040px) {
+    .main{
+        min-height: 420px;
+        margin-top: 120px !important;
+    }
+
+    .left,.right{
+        padding-top: 30px !important;
+    }
+
+    .leftContainer,.rightContainer{
+        height: 400px;
+    }
+
+    .role div select,.input div input {
+        padding: 5px;
+    }
+
+    .role div select,.role div select option{
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .checkbox input{
+        transform: scale(1);
+    }
+
+    .input div span,.checklabel,.forgot,.noAccount p,.noAccount a,.input div input{
+        font-size: 10px;
+    }
+
+    .input div input{
+        padding: 10px;
+    }
+
+    .input div span{
+        left: 15px;
+    }
+
+    .input div input:focus~span,
+    .input div input:valid~span {
+        transform: translateX(5px) translateY(-5px);
+        font-size: 8px;
+    }
+
+    .button{
+        padding: 5px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .button1{
+        padding: 5px;
+        height: 20px;
+        font-size: 8px;
+        width: 100px;
+    }
+
+    .leftContainer img,.rightContainer img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .leftContainer h1,.rightContainer h1{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:660px) {
+    @keyframes translatetoleft {
+        0% {
+            transform: scale(0.5);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes translatetoright {
+        0% {
+            transform: scale(0.5);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+
+     .main{
+        width: 100%;
+        height: 100%;
+    }
+    .left,.right{
+        padding: 10px;
+        width: 100%;
+        padding: 10px !important;
+    }
+
+    .input div input {
+        padding: 10px;
+    }
+
+    .input div span{
+        left: 15px;
+    }
+
+    .input div input:focus~span,
+    .input div input:valid~span {
+        transform: translateX(15px) translateY(-5px);
+        border-radius: 2px;
+    }
+    /*
+
+    .left h3,.right h3{
+        font-size: 15px;
+        margin: 10px auto;
+    }
+
+    .role div select,.role div select option{
+        font-size: 6px;
+        padding: 1px;
+    }
+
+    .role{
+        padding: 1px 20px;
+    }
+
+    .checkbox input{
+        transform: scale(0.5);
+    }
+
+    .input div span,.checklabel,.forgot,.noAccount p,.noAccount a{
+        font-size: 6px;
+    }
+
+    .input{
+        gap: 5px;
+        padding: 2px 20px;
+    }
+
+    .button{
+        padding: 5px;
+        height: 20px;
+        font-size: 6px;
+        margin-top: 10px !important;
+    }
+
+    .button1{
+        padding: 5px;
+        height: 20px;
+        font-size: 8px;
+        width: 100px;
+    } */
+
+    .leftContainer,.rightContainer{
+        display: none;
+    }
+}

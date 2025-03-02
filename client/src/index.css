@@ -1,0 +1,61 @@
+body{
+  /* color: #6f42c1; */
+    background: #121412;
+    z-index: 0;
+    height: 100vh;
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p,li,a,text{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #25292e;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #393939;
+  }
+
+  .active{
+    background-color: #87DB1c;
+  }
+
+  .active i,.active p{
+    color: black !important;
+  }
+
+  
+
+  @media screen and (max-width: 500px) {
+    ::-webkit-scrollbar-track {
+        display:none; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        display: none;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+  }

@@ -1,0 +1,461 @@
+.page{
+    display: flex;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    margin-left: 250px !important;
+    margin: auto;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.side{
+    background-color: white;
+}
+
+.container {
+    width: 95%;
+    margin: 30px auto;
+    justify-content: space-between;
+    padding: 0px 20px;
+    animation: 0.8s fadeIn forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1.5px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(192, 192, 192);
+}
+
+.topContent {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomContent {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.analysisContent{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.card1,.card6 {
+    height: 350px;
+    background: white;
+    border-radius: 20px;
+    border: 1.5px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(192, 192, 192);
+}
+
+.card7,.card8{
+    width: 100%;
+}
+
+.card1 {
+    width: 30%;
+}
+
+.button{
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    background-image: linear-gradient(135deg, #9f6cff 0%, #7520ff 100%);
+    border: 2px solid #6814ee;
+    outline: none;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    transition: 0.3s all;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover{
+    border: 2px solid 6814ee;
+    background-image: linear-gradient(45deg, #9f6cff 0%, #7520ff 100%);
+    color: white;
+    box-shadow: 0 0 10px rgb(87, 87, 87);
+    letter-spacing: 3px;
+}
+
+.active {
+    background: #000000;
+    color: white;
+}
+
+.calender,
+.weather {
+    width: 100% !important;
+    padding: 10px;
+    height: 350px;
+    border-radius: 20px;
+    border: 1.5px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(192, 192, 192);
+    background-color: #33458F;
+}
+
+.calender div button{
+    /* width: 100%; */
+    min-width: 0;
+}
+.card3 {
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    border: 1.5px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(192, 192, 192);
+    padding: 0 !important;
+}
+
+.card3 {
+    width: 65%;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 65%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 32%;
+    gap: 20px;
+}
+
+.cards4{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 30%;
+    gap: 20px;
+}
+
+.card4,.card7,.card2,.card5 {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100%; */
+    /* width: 100%; */
+    background: white;
+    border-radius: 20px;
+    border: 1.5px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(192, 192, 192);
+}
+
+.card4{
+    height:33% !important;
+}
+
+.card5{
+    height: 66%;
+    flex-direction: column;
+}
+
+.cards2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 65%;
+}
+
+.card2:nth-child(1){
+    background-color: #FFF7F4;
+}
+
+.card2:nth-child(2){
+    background-color: #deebff;
+}
+
+.card2:nth-child(3){
+    background-color: #c2eaff;
+}
+
+.card2:nth-child(4){
+    background-color: #ffc7fc;
+}
+
+.card2 li i,.card4 li i{
+    font-size: 40px;
+}
+
+.card2:nth-child(1) li i, .card2:nth-child(1){
+    color: #fd3333;
+    text-decoration: none;
+}
+
+.card2:nth-child(2) li i,.card2:nth-child(2){
+    color: #2a229a;
+    text-decoration: none;
+}
+
+.card2:nth-child(3) li i,.card2:nth-child(3){
+    color: #005f85;
+    text-decoration: none;
+}
+
+.card2:nth-child(4) li i,.card2:nth-child(4){
+    color: #73006b;
+    text-decoration: none;
+}
+
+.card4{
+    background-color: #b7fff3;
+}
+
+.card4 li i,.card4{
+    color: #00514d;
+    text-decoration: none;
+}
+
+.card4:hover{
+    color: #00514d;
+}
+
+.progress{
+    width: 75%;
+    height: 75%;
+}
+
+.progress div{
+    height: 100%;
+}
+
+.progress div div div{
+    top: 0;
+    margin-top: 0 !important;
+}
+
+.progress div div svg{
+    height: 100%;
+}
+
+.progressText{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.progressText li{
+    display: flex;
+    gap: 10px;
+}
+
+.progressText li p{
+    width: 20px;
+    height: 20px;
+}
+
+.progressText li:nth-child(1) p{
+    background-color: #fd3333;
+}
+
+.progressText li:nth-child(2) p{
+    background-color: #fd7e14;
+}
+
+
+.circularProgress text{
+    font-weight: bold;
+}
+
+.arrowli{
+    display: none;
+}
+
+@media screen and (max-width:993px) {
+    .cards2{
+        width: 100%;
+    }
+    .arrowli{
+        display: block;
+    }
+    .container{
+        flex-direction: column;
+        gap: 20px;
+        z-index: 0;
+    }
+
+    .topContent{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bottomContent{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .leftSideBar{
+        position: fixed;
+        z-index: 5;
+        height: 300px;
+        left: 20px;
+        top: 150px;
+        animation: 0.3s rightSlide forwards;
+    }
+
+    .hamList{
+        display: flex;
+    justify-content: center;
+    }
+
+    .openSideBar {
+        display: block;
+        animation: 0.3s openHam forwards;
+    }
+
+    .closeSideBar {
+        display: block;
+        animation: 0.3s closeHam forwards;
+    }
+
+    @keyframes openHam {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes closeHam {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-130%);
+        }
+    }
+
+    .arrowli {
+        position: absolute;
+        left: 90px;
+        top: 140px;
+        list-style: none;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-image: linear-gradient(135deg, #9f6cff 0%, #7520ff 100%);
+        border-radius: 50%;
+        padding: 3px 0 3px 0; /* Adjusted padding */
+        border: 2px solid #6f42c1;
+        display: flex; /* Added for centering */
+        justify-content: center; /* Added for centering */
+        align-items: center; /* Added for centering */
+        transition: 0.3s all;
+    }
+
+    .arrowli:hover {
+        background-image: linear-gradient(0deg, #9f6cff 0%, #7520ff 100%);
+        box-shadow: 0 0 10px rgb(255, 23, 96);
+        color: white;
+    }
+    
+    .arrowli i {
+        font-size: 20px;
+        /* Removed margin: auto; */
+    }
+
+    .arrowleft{
+        transform: rotate(180deg);
+    }
+
+    .card1,.card2,.card3,.card4,.card5{
+        width: 100%;
+    }
+
+    .cards4{
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .main{
+        margin-left: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .card2{
+        min-height: 150px;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .cards2{
+        grid-template-columns: 1fr;
+    }
+
+    .container,.main{
+        width: 100%;
+        padding: 0;
+    }
+
+    .header{
+        width: 250px;
+        margin: auto;
+    }
+    .card1,.calender{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .card2,.card3,.card4,.card5{
+        width: 250px !important;
+        margin: auto;
+    }
+
+    .card2 ul li{
+        flex-direction: column;
+    }
+
+    .calender div:nth-child(2) button{
+        padding: 5px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}

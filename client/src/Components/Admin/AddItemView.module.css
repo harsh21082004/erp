@@ -1,0 +1,269 @@
+.addCourseModal,.addItemModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    width: calc(100% - 250px);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dimmed background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.addCourseModalContent,.addItemModalContent {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #25292e;
+    height: calc(100vh - 100px);
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    min-width: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.addItemModalContent::-webkit-scrollbar{
+    width: 10px;
+}
+
+.addItemModalContent::-webkit-scrollbar-thumb{
+    background: #ffffff !important;
+    border-radius: 10px;
+}
+
+.addItemModalContent::-webkit-scrollbar-track{
+    background: #25292e;
+    border-radius: 10px;
+}
+
+.addItemModalContent h3,.addItemModalContent i{
+    color: white;
+}
+
+.addCourseModalHeader,.addItemModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addCourseModalBody,.addItemModalBody {
+    margin-top: 10px;
+}
+
+.dimmed .addCourseModal, .dimmed .addItemModal {
+    pointer-events: auto;
+    /* Allow interaction with modal */
+}
+
+
+.addItemModal .input,.addCourseModal .input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.addItemModal .input div input,.addCourseModal .input div input, .addItemModal .input div select, .addItemModal .input div div div input{
+    position: relative;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.subjects{
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+}
+
+.subjects div{
+    width: 97%;
+    margin: auto;
+}
+
+.removeBut{
+    width: calc(30% - 12px);
+    border-radius: 10px;
+}
+
+.anotherBut{
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.addItemModal .input div{
+    display: flex;
+    position: relative;
+}
+
+.addItemModal .input div select{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    transition: 0.3s;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+}
+
+.addItemModal .input span, .addItemModal .input div div div span{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    top: 10px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0 5px;
+    transition: 0.3s;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.role div select,
+.role div select option {
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding-left: 15px;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+}
+
+.collName input:focus~span,
+.collName input:valid~span,
+.courseName input:focus~span,
+.courseName input:valid~span {
+    color: black !important;
+    transform: translateX(0px) translateY(0px) !important;
+    font-size: 16px !important;
+    padding: 0 5px !important;
+    top: 10px !important;
+    background: transparent !important;
+    border-radius: 3px !important;
+    border: none !important;
+}
+
+
+.addItemModal .input div input:focus~span,
+.addItemModal .input div input:valid~span,
+.addItemModal .input div div div input:focus~span,
+.addItemModal .input div div div input:valid~span{
+    color: white ;
+    transform: translateX(10px) translateY(-10px) ;
+    font-size: 14px ;
+    padding: 0 5px ;
+    top: 0px ;
+    background: #000000 ;
+    border-radius: 3px ;
+}
+
+.button {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background: #87DB1c;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 3px 4px 5px rgb(93, 93, 93);
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    transition: 0.3s all;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    background: #5fa800;
+    color: white;
+    letter-spacing: 10px;
+}
+
+@media screen and (max-width: 993px) {
+    .main{
+        margin-left: 0 !important;
+        border-radius: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .addItemModal {
+        width: 100%;
+        min-width: 100%;
+        left: 0;
+    }
+
+    .addItemModalContent {
+        width: 100%;
+        min-width: 400px;
+        max-width: 400px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .addItemModalContent {
+        width: 100%;
+        min-width: 300px;
+        max-width: 300px !important;
+        max-height: 350px;
+        height: 100%;
+    }
+
+    .addItemModal .input div input, .addItemModal .input div select{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .addItemModal .input div span, .addItemModal .input div select span{
+        font-size: 12px;
+        top: 5px;
+        left: 15px;
+    }
+
+    .addItemModal .input div input:focus~span,
+    .addItemModal .input div input:valid~span {
+        transform: translateX(10px) translateY(-10px);
+        font-size: 10px;
+        padding: 0 5px;
+        top: 3px;
+        background: #000000;
+        border-radius: 3px;
+    }
+
+    .button{
+        height: 30px;
+        font-size: 12px;
+        width: 50% !important;
+        margin-top: 10px;
+    }
+}

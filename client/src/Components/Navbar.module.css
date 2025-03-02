@@ -1,0 +1,262 @@
+.navbarCollapse ul {
+    margin:0 auto;
+}
+
+@media screen and (max-width: 1130px){
+    .navbarCollapse ul li a{
+        font-size: 0.8rem !important;
+    }
+
+    .navbar div a{
+        font-size: 1rem !important;
+    }
+    
+}
+
+
+.navbar{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #7f4bde;
+}
+
+.hamList {
+    list-style: none;
+    margin: auto;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 50px;
+}
+
+.hamList i {
+    font-size: 25px;
+}
+
+.navbarCollapse ul li {
+    margin: 0 10px;
+}
+
+.navbarCollapse ul li a{
+    transition: 0.3s all;
+    padding: 0 2px;
+}
+
+.navbarCollapse form input{
+    border-radius: 30px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid #fa3ad0;
+    outline: none;
+    background: rgb(255, 237, 245);
+}
+
+.navbarCollapse form div {
+    display: flex;
+    position: relative;
+}
+
+.navbarCollapse form div span {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    top: 7px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0 5px;
+    transition: 0.3s;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.navbarCollapse form div input:focus~span,
+.navbarCollapse form div input:valid~span {
+    transform: translateX(10px) translateY(-10px);
+    font-size: 11px;
+    padding: 0 5px;
+    top: 0px;
+    background: linear-gradient(90deg, #FFA835 -3.85%, #fc60ae 97.3%);
+    border-radius: 3px;
+    border: 0.2px solid rgb(0, 0, 0);
+
+}
+
+.navbarCollapse ul li:hover a{
+    letter-spacing: 2px;
+    border-left: 3px solid rgb(255, 115, 190);
+    border-right: 3px solid rgb(255, 115, 190);
+    border-radius: 10px;
+}
+
+.navLink {
+    color: black !important;
+    font-size: 18px !important;
+}
+
+.button1,.button2{
+    padding: 5px;
+    max-width: 100px;
+    background: linear-gradient(90deg, #FFA835 -3.85%, #fc60ae 97.3%);
+    border: 2px solid #fa3ad0;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 8px rgb(93, 93, 93);
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    transition: 0.3s all;
+    letter-spacing: 1px;
+}
+
+.button1:hover,.button2:hover {
+    border: 2px solid rgb(255, 200, 229);
+    background: linear-gradient(90deg, #cb780c -3.85%, #ff2a95 97.3%);
+    color: white;
+    box-shadow: 0 0 10px rgb(87, 87, 87);
+    letter-spacing: 3px;
+}
+
+.right,.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.accountContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 170px;
+    cursor: pointer;
+}
+
+.accountContainer p:nth-child(1){
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.account{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: auto;
+    color: #7f4bde;
+}
+
+.accountContainer i{
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.2s all;
+}
+
+.accountContainer i:hover{
+    background-color: #ececec;
+    color: black;
+}
+
+@media screen and (max-width: 992px) {
+
+    .hamList {
+        display: none;
+    }
+    .navbarCollapse {
+        position: fixed;
+        margin: auto;
+        padding-top: 50px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: rgb(255, 190, 219);
+        background: linear-gradient(90deg, rgb(255, 192, 207) 0%, rgb(255, 237, 245) 100%);
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        z-index: 1;
+    }
+
+    .navbarToggler {
+        z-index: 2;
+        right: 10px;
+        border: none;
+        outline: none;
+    }
+
+    .navbarCollapse form {
+        justify-content: center;
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .navbarCollapse form input{
+        width: 100%;
+    }
+
+    .navbarCollapse ul {
+        margin: auto;
+    }
+
+    .navbarCollapse ul li {
+        margin: auto;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .button2{
+        margin:15px auto !important;
+    }
+
+    .openHam {
+        display: block;
+        animation: 0.3s openHam forwards;
+    }
+
+    .open{
+        position: fixed;
+    }
+
+    .closeHam {
+        display: block;
+        animation: 0.3s closeHam forwards;
+    }
+
+    @keyframes openHam {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes closeHam {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
